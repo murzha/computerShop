@@ -1,0 +1,13 @@
+Options -Indexes
+Allow from all
+Require all granted
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+    Order Allow,Deny
+    Allow from all
+    Satisfy any
+</FilesMatch>

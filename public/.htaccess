@@ -1,0 +1,12 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ index.php?$1 [QSA,L]
+
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+    Allow from all
+    Require all granted
+</FilesMatch>

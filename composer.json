@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "computerShop\\": "vendor/computerShop/core",
+      "app\\": "app"
+    }
+  },
+  "require": {
+    "gabordemooij/redbean": "dev-master",
+    "swiftmailer/swiftmailer": "^6.0"
+  }
+}

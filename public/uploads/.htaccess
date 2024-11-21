@@ -1,0 +1,7 @@
+Options -Indexes
+Allow from all
+Require all granted
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
